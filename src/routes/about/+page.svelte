@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Demo from "./demo.svelte";
-	import Input from "./Input.svelte";
-	import TodoList from "../components/todoList/index.svelte";
 
 	let count = $state(0);
 
@@ -41,14 +38,7 @@
 <canvas bind:this={canvas} width={size} height={size}></canvas>
 <input type="color" value={color} oninput={updateColor} />
 <input type="range" min="10" max="100" value={size} oninput={updateSize} />
-<Input type="color" bind:value={color} />
-<Input type="range" bind:value={size as number} />
-<Input type="text" bind:value={count} />
 
-<Demo  />
-<Demo name="John" />
-
-<TodoList />
 <style>
 	:global(body) {
 		background-color: #2a2a2a;
