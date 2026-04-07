@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Demo from "./demo.svelte";
 	import Input from "./Input.svelte";
-	import TodoList from "../components/todoList/index.svelte";
 
 	let count = $state(0);
 
@@ -48,7 +47,6 @@
 <Demo  />
 <Demo name="John" />
 
-<TodoList />
 <style>
 	:global(body) {
 		background-color: #2a2a2a;

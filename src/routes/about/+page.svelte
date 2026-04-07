@@ -40,23 +40,5 @@
 <input type="range" min="10" max="100" value={size} oninput={updateSize} />
 
 <style>
-	:global(body) {
-		background-color: #2a2a2a;
-		color: #f0f0f0;
-		font-family: 'Roboto', sans-serif;
-		margin: 0;
-		padding: 20px;
-	}
-	button {
-		background-color: #024a04;
-		border-radius: 10px;
-		color: white;
-		padding: 15px 32px;
-		border: none;
-		cursor: pointer;
-		transition: background-color 0.3s ease;
-		&:active {
-			background-color: #023a04;
-		}
-	}
+	
 </style>
