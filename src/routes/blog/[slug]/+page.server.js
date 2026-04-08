@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import DOMPurify from 'isomorphic-dompurify';
 import { posts } from '../data';
 
 export function load({ params }) {
@@ -7,6 +8,9 @@ export function load({ params }) {
 		throw error(404);
 	}
 	return {
-		post
+		post: {
+			...post,
+			content: DOMPurify.sanitize(post.content)
+		}
 	};
 }

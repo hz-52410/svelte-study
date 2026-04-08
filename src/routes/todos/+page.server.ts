@@ -10,8 +10,8 @@ export function load({ cookies }) {
 	}
 
 	return {
-		todos: db.getTodos(id)
-	};
+		todos: db.getTodos(id ?? '')
+	}
 }
 
 export const actions = {

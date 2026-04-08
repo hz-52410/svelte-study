@@ -1,5 +1,8 @@
 {
 	"files.associations": {
-		"*.css": "tailwindcss"
-	}
+		"*.css": "css"
+	},
+	"cSpell.words": [
+		"unocss"
+	]
 }
